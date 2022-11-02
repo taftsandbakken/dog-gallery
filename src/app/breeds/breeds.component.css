@@ -1,0 +1,15 @@
+.back-link {
+  position: absolute;
+  left: 16px;
+}
+
+.back-btn {
+  background-color: #0B5ED7;
+  border-color: #0B5ED7;
+}
+
+@media (max-width: 400px) {
+  .back-link {
+    left: 4px;
+  }
+}

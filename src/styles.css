@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #CECDCB;
+  padding: 16px;
+}
+
+.header {
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #0B5ED7, #1353b4);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+  padding: 12px;
+}
+
+.subheader {
+  font-size: 50px;
+}
+
+.dog-pics-container {
+  line-height: 0;
+  -webkit-column-count: 5;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 5;
+  -moz-column-gap: 0px;
+  column-count: 5;
+  column-gap: 0px;
+}
+
+.dog-pic {
+  width: 100%;
+  height: auto;
+  display:inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 4px;
+}
+
+.dog-pic:hover {
+  background: #EDEDED;
+}
+
+@media (max-width: 1000px) {
+  .dog-pics-container {
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
+  }
+}
+
+@media (max-width: 800px) {
+  .dog-pics-container {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    margin: 4px;
+  }
+
+  .dog-pics-container {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+  }
+}
